@@ -4,7 +4,7 @@ Paragraph, Table, TableStyle)
 from reportlab.lib.styles import getSampleStyleSheet
 from reportlab.lib.pagesizes import A4
 from reportlab.lib import colors
-import getpass #para vobtener el nombre del user
+from getpass import getuser #para vobtener el nombre del user
 #---------------
 import random
 import json
@@ -71,7 +71,7 @@ class Gestor:
     
     def Genera1(self):
         from reportlab.lib.pagesizes import A4
-        doc = SimpleDocTemplate("/Downloads/Reporte_Apps.pdf", pagesize = A4)
+        doc = SimpleDocTemplate("Reporte_Usuarios.pdf", pagesize = A4)
         story=[]
         datos = []
         for i in range(0,len(self.mivector)):

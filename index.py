@@ -76,7 +76,7 @@ def elimanaapp1():
         return "{\"data\":\"false\"}"
 
 #genera el pdf Users
-@app.route('/pdf1', methods=['POST','GET'])
+@app.route('/pdf1')
 def GeneraPDF1():
     return gestor.Genera1()
 
