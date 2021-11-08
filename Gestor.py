@@ -71,7 +71,7 @@ class Gestor:
     
     def Genera1(self):
         from reportlab.lib.pagesizes import A4
-        doc = SimpleDocTemplate("Reporte_Usuarios.pdf", pagesize = A4)
+        doc = SimpleDocTemplate("C:/Users/"+getuser()+"/Downloads/Reporte_Usuarios.pdf", pagesize = A4)
         story=[]
         datos = []
         for i in range(0,len(self.mivector)):
